@@ -1,6 +1,8 @@
+import { ReactNode } from "react"
+
 export interface SelectProps {
-  idSelect: string
+  idSelect?: string
   name: string
   labelName?: string
-  children: any
+  children: ReactNode
 }
