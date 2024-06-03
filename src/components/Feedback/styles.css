@@ -1,0 +1,14 @@
+.feedback-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
