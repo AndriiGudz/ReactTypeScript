@@ -1,0 +1,13 @@
+@keyframes blinkingText {
+    0% { color: red; }
+    25% { color: green; }
+    50% { color: blue; }
+    75% { color: yellow; }
+    100% { color: red; }
+}
+
+.blinking-text {
+    font-size: 32px;
+    font-weight: bold;
+    animation: blinkingText 3s infinite;
+}
