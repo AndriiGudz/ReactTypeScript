@@ -1,5 +1,5 @@
 import './styles.css'
-import foto from '../../assets/myFoto.jpg'
+import foto from 'assets/myFoto.jpg'
 
 function ProfileCard() {
   return (

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './styles.css'
-import Button from '../Button/Button'
 import { CounterProps } from './types'
+import Button from 'components/Button/Button'
 
 function Counter({count, onMinusClick, onPlusClick, disabledMinus, disabledPlus}: CounterProps) {
 

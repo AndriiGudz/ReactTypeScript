@@ -1,14 +1,14 @@
-import "./styles.css";
+import { AnimalCardWrapper, AnimalImg, CardTitle, CardInfo } from './styles';
 import {AnimalCardProps} from './type'
 
 function AnimalCard({ animalData }: AnimalCardProps) {
   return (
-    <div className="animal-card-wrapper">
-      <h2>{animalData.name}</h2>
-      <p>{animalData.species}</p>
-      <p>{animalData.role}</p>
-      <img src={animalData.image} />
-    </div>
+    <AnimalCardWrapper>
+      <CardTitle>{animalData.name}</CardTitle>
+      <CardInfo>{animalData.species}</CardInfo>
+      <CardInfo>{animalData.role}</CardInfo>
+      <AnimalImg src={animalData.image} />
+    </AnimalCardWrapper>
   );
 }
 

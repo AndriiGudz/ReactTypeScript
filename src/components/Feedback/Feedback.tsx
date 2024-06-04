@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Button from '../Button/Button'
 import './styles.css'
 import { FeedbackProps } from './types'
+import Button from 'components/Button/Button'
 
 function Feedback({likePlus, countLike, dislikePlus, countDislike, resetResults}: FeedbackProps) {
   // const [countLike, setLike] = useState<number>(0)
