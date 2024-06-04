@@ -3,8 +3,7 @@ import './styles.css'
 import Button from '../Button/Button'
 import { CounterProps } from './types'
 
-function Counter({count, onMinusClick, onPlusClick}: CounterProps) {
-
+function Counter({ count, onMinusClick, onPlusClick }: CounterProps) {
   // Комментируем или удаляем весь функционал, после поднятия состояния!!! (мы подняли состояние в Lessons 07)
 
   // const [count, setCount] = useState<number>(5)
