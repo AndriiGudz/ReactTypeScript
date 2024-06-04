@@ -1,5 +1,6 @@
 import './App.css';
 import BlinkingText from './components/BlinkingText/BlinkingText';
+import Consultation03 from './consultation/Consultation03/Consultation03';
 import Homeworks06 from './homeworks/Homeworks06/Homeworks';
 import Homeworks07 from './homeworks/Homeworks07/Homeworks07';
 import Lessons06 from './lessons/Lessons06/Lessons06';
@@ -14,6 +15,7 @@ function App() {
       {/* <Homeworks06 /> */}
       <Homeworks07 />
       
+      <Consultation03 />
     </div>
   );
 }
