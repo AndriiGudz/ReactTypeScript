@@ -3,7 +3,7 @@ import './styles.css'
 import Button from '../Button/Button'
 import { CounterProps } from './types'
 
-function Counter({count, onMinusClick, onPlusClick}: CounterProps) {
+function Counter({count, onMinusClick, onPlusClick, disabledMinus, disabledPlus}: CounterProps) {
 
   // Комментируем или удаляем весь функционал, после поднятия состояния!!! (мы подняли состояние в Lessons 07)
 
@@ -19,9 +19,9 @@ function Counter({count, onMinusClick, onPlusClick}: CounterProps) {
 
   return (
     <div className="counter-component">
-      <Button name="-" onClick={onMinusClick} />
+      <Button name="-" onClick={onMinusClick} disabled={disabledMinus} />
       <div className="counter-result">{count}</div>
-      <Button name="+" onClick={onPlusClick} />
+      <Button name="+" onClick={onPlusClick}  disabled={disabledPlus} />
     </div>
   )
 }

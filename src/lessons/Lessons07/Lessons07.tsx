@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './styles.css'
-import Counter from '../../components/Counter/Countert'
+import Counter from '../../components/Counter/Counter'
 
 function Lessons07() {
   // generic

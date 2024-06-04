@@ -30,3 +30,8 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.btn-component:disabled {
+  background-color: grey;
+  cursor: auto;
+}
