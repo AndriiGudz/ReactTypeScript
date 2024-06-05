@@ -1,14 +1,14 @@
-import './styles.css'
+import {ProfileAvatar, ProfileCardBox, UserName, UserInfo} from './styles'
 import foto from 'assets/myFoto.jpg'
 
 function ProfileCard() {
   return (
-    <div className="profile-card">
-      <img src={foto} alt="Avatar" className="profile-avatar" />
-      <h2>Andrii Gudz</h2>
-      <p>Occupation: student.</p>
-      <p>Hobbies: volleyball.</p>
-    </div>
+    <ProfileCardBox>
+      <ProfileAvatar src={foto} alt="Avatar" />
+      <UserName>Andrii Gudz</UserName>
+      <UserInfo>Occupation: student.</UserInfo>
+      <UserInfo>Hobbies: volleyball.</UserInfo>
+    </ProfileCardBox>
   )
 }
 

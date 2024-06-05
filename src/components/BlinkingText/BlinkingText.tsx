@@ -1,7 +1,7 @@
-import './styles.css'
+import {BlinkingTextComponent} from './styles'
 
 function BlinkingText() {
-  return <span className="blinking-text">My React-TS project</span>
+  return <BlinkingTextComponent>My React-TS project</BlinkingTextComponent>
 }
 
 export default BlinkingText
