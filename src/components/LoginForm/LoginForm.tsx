@@ -1,12 +1,12 @@
 import Input from 'components/Input/Input'
 import Button from 'components/Button/Button'
-import './styles.css'
+import {LoginFormContainer, TitleForm, InputForm} from './styles'
 
 function LoginForm() {
   return (
-    <div className="login-form-container">
-      <h2>Login form</h2>
-      <div className='input-form'>
+    <LoginFormContainer>
+      <TitleForm>Login form</TitleForm>
+      <InputForm>
       <Input
         name="Email"
         type="text"
@@ -19,9 +19,9 @@ function LoginForm() {
       placeholder="Enter your password"
       label="Password"
       />
-      </div>
+      </InputForm>
       <Button name="Login" type='submit' />
-    </div>
+    </LoginFormContainer>
   )
 }
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './styles.css'
+import {CounterComponent, CounterResult} from './styles'
 import { CounterProps } from './types'
 import Button from 'components/Button/Button'
 
@@ -18,11 +18,11 @@ function Counter({count, onMinusClick, onPlusClick, disabledMinus, disabledPlus}
   // }
 
   return (
-    <div className="counter-component">
+    <CounterComponent>
       <Button name="-" onClick={onMinusClick} disabled={disabledMinus} />
-      <div className="counter-result">{count}</div>
+      <CounterResult>{count}</CounterResult>
       <Button name="+" onClick={onPlusClick}  disabled={disabledPlus} />
-    </div>
+    </CounterComponent>
   )
 }
 

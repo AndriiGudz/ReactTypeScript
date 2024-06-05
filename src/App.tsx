@@ -7,6 +7,7 @@ import Homeworks07 from './homeworks/Homeworks07/Homeworks07';
 import Lessons06 from './lessons/Lessons06/Lessons06';
 import Lessons07 from './lessons/Lessons07/Lessons07';
 import GlobalStyles from 'styles/GlobalStyles';
+import Homeworks08 from 'homeworks/Homeworks08/Homeworks08';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       {/* <BlinkingText /> */}
       {/* <Lessons06 /> */}
       {/* <Lessons07 /> */}
-      <Lessons08 />
+      {/* <Lessons08 /> */}
       {/* <Homeworks06 /> */}
-      {/* <Homeworks07 />       */}
+      {/* <Homeworks07 /> */}
+      <Homeworks08 />
       {/* <Consultation03 /> */}
     </>
   );
