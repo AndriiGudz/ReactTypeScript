@@ -12,3 +12,7 @@ export const Lessons09Component = styled.div`
 export const Result = styled.div`
   color: black;
 `
+
+export const Img = styled.img`
+width: 400px;
+`

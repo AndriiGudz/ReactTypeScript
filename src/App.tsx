@@ -19,11 +19,11 @@ function App() {
       {/* <Lessons06 /> */}
       {/* <Lessons07 /> */}
       {/* <Lessons08 /> */}
-      {/* <Lessons09 /> */}
+      <Lessons09 />
       {/* <Homeworks06 /> */}
       {/* <Homeworks07 /> */}
       {/* <Homeworks08 /> */}
-      <Homeworks09 />
+      {/* <Homeworks09 /> */}
       {/* <Consultation03 /> */}
     </>
   );
