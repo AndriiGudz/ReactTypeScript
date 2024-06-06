@@ -10,6 +10,7 @@ import Lessons06 from './lessons/Lessons06/Lessons06';
 import Lessons07 from './lessons/Lessons07/Lessons07';
 import Lessons08 from 'lessons/Lessons08/Lessons08';
 import Lessons09 from 'lessons/Lessons09/Lessons09';
+import Lessons10 from 'lessons/Lessons10/Lessons10';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       {/* <Lessons06 /> */}
       {/* <Lessons07 /> */}
       {/* <Lessons08 /> */}
-      <Lessons09 />
+      {/* <Lessons09 /> */}
+      <Lessons10 />
       {/* <Homeworks06 /> */}
       {/* <Homeworks07 /> */}
       {/* <Homeworks08 /> */}
