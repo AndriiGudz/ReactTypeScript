@@ -8,8 +8,11 @@ import {
 import { ProductListTypes } from './types'
 import { products } from './data'
 import Button from 'components/Button/Button'
+import { useState } from 'react'
 
 function ProductList() {
+const [note, setNote] = useState<string[]>()
+
   const productElements = products.map((product) => {
     // const BtnClick = () => {
     //   addProductToList(product.name)
