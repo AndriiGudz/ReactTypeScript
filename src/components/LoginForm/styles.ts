@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const LoginFormContainer = styled.div`
+export const LoginFormContainer = styled.form`
   width: 590px;
   height: 450px;
   border: 1px solid #000;

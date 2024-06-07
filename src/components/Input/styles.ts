@@ -16,7 +16,7 @@ export const InputField = styled.input`
   line-height: 24px;
   text-align: left;
   color: #1e1e1e;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   &::placeholder {
     color: #9a9a9a;
@@ -30,4 +30,9 @@ export const InputField = styled.input`
 
 export const LabelComponent = styled.label`
   color: black;
+`
+
+export const ErrorMessage = styled.div`
+  color: red;
+  height: 30px;
 `

@@ -1,7 +1,7 @@
-import {InputContainer, InputField, LabelComponent} from './styles'
+import {InputContainer, InputField, LabelComponent, ErrorMessage} from './styles'
 import { InputProps } from './types'
 
-function Input({ name, type = 'text', placeholder, label, value, onChange }: InputProps) {
+function Input({ name, type = 'text', placeholder, label, value, onChange, error }: InputProps) {
 console.log('Input update');
 
 
@@ -16,6 +16,7 @@ console.log('Input update');
         value = {value}
         onChange={onChange}
       />
+      <ErrorMessage>{error}</ErrorMessage>
     </InputContainer>
   )
 }
