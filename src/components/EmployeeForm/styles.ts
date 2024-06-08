@@ -32,3 +32,6 @@ export const TermsAccepted = styled.div`
   /* display: flex; */
   /* flex-direction: column; */
 `
+export const Checkbox = styled.input``
+
+export const CheckboxLabel = styled.label``

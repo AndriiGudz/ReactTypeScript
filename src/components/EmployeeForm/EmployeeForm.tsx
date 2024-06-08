@@ -8,6 +8,8 @@ import {
   TitleForm,
   TermErrors,
   TermsAccepted,
+  Checkbox,
+  CheckboxLabel
 } from './styles'
 import { EmployeeFormValues, EMPLOYEE_FORM_NAMES } from './types'
 import Button from 'components/Button/Button'
@@ -51,6 +53,8 @@ function EmployeeForm() {
     },
   })
 
+  console.log(formik)
+
   return (
     <EmployeeFormComponent>
       <EmployeeFormBox onSubmit={formik.handleSubmit}>
@@ -58,7 +62,7 @@ function EmployeeForm() {
         <Input
           name={EMPLOYEE_FORM_NAMES.FIRST_NAME}
           placeholder={'Имя'}
-          label='Имя'
+          label="Имя"
           value={formik.values[EMPLOYEE_FORM_NAMES.FIRST_NAME]}
           onChange={formik.handleChange}
           error={formik.errors[EMPLOYEE_FORM_NAMES.FIRST_NAME]}
@@ -66,7 +70,7 @@ function EmployeeForm() {
         <Input
           name={EMPLOYEE_FORM_NAMES.LAST_NAME}
           placeholder={'Фамилия'}
-          label='Фамилия'
+          label="Фамилия"
           value={formik.values[EMPLOYEE_FORM_NAMES.LAST_NAME]}
           onChange={formik.handleChange}
           error={formik.errors[EMPLOYEE_FORM_NAMES.LAST_NAME]}
@@ -74,7 +78,7 @@ function EmployeeForm() {
         <Input
           name={EMPLOYEE_FORM_NAMES.AGE}
           placeholder={'Возраст'}
-          label='Возраст'
+          label="Возраст"
           value={formik.values[EMPLOYEE_FORM_NAMES.AGE]}
           onChange={formik.handleChange}
           error={formik.errors[EMPLOYEE_FORM_NAMES.AGE]}
@@ -82,22 +86,21 @@ function EmployeeForm() {
         <Input
           name={EMPLOYEE_FORM_NAMES.JOB_TITLE}
           placeholder={'Должность'}
-          label='Должность'
+          label="Должность"
           value={formik.values[EMPLOYEE_FORM_NAMES.JOB_TITLE]}
           onChange={formik.handleChange}
           error={formik.errors[EMPLOYEE_FORM_NAMES.JOB_TITLE]}
         />
         <TermsAccepted>
-          <input
+          <Checkbox
+            id="check-box"
             type="checkbox"
             name={EMPLOYEE_FORM_NAMES.TERMS_ACCEPTED}
             checked={formik.values[EMPLOYEE_FORM_NAMES.TERMS_ACCEPTED]}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
-          <label htmlFor={EMPLOYEE_FORM_NAMES.TERMS_ACCEPTED}>
-            Принять правила использования
-          </label>
+          <CheckboxLabel htmlFor="check-box">Принять правила использования</CheckboxLabel>
           {formik.touched[EMPLOYEE_FORM_NAMES.TERMS_ACCEPTED] &&
             formik.errors[EMPLOYEE_FORM_NAMES.TERMS_ACCEPTED] && (
               <TermErrors>
