@@ -28,7 +28,8 @@ function EmployeeForm() {
     [EMPLOYEE_FORM_NAMES.AGE]: Yup.number()
       .required('Возраст является обязательным')
       .min(18, 'Возраст должен быть не меньше 18')
-      .max(150, 'Возраст должен быть не больше 150'),
+      .max(150, 'Возраст должен быть не больше 150')
+      .test('check length', 'Max length 3 symbols', (value) => String(value).length <= 3),
 
     [EMPLOYEE_FORM_NAMES.JOB_TITLE]: Yup.string()
       .max(30, 'Должность должна содержать максимум 30 символов')
