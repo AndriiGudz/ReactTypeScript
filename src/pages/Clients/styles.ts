@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { Link } from 'react-router-dom'
 
 export const ClientsPageWrapper = styled.div`
   display: flex;
@@ -8,6 +9,10 @@ export const ClientsPageWrapper = styled.div`
   width: 100%;
 `
 
+export const StyledLink = styled(Link)`
+  font-size: 18px;
+`
+
 export const Title = styled.h2``
 
 export const ClientsInfo = styled.div`
@@ -15,6 +20,7 @@ export const ClientsInfo = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* flex: 1; */
   gap: 20px;
   width: 200px;
   height: 200px;
