@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import GlobalStyles from 'styles/GlobalStyles';
 import Home from 'pages/Home/Home';
 import User from 'pages/User/User';
+import Clients from 'pages/Clients/Clients';
 import About from 'pages/About/About';
 
 // import BlinkingText from './components/BlinkingText/BlinkingText';
@@ -20,6 +21,9 @@ import About from 'pages/About/About';
 // import Lessons10 from 'lessons/Lessons10/Lessons10';
 // import Lessons11 from 'lessons/Lessons11/Lessons';
 import Layout from 'components/Layout/Layout';
+import Amazon from 'pages/Clients/Amazon/Amazon';
+import Ebay from 'pages/Clients/Ebay/Ebay';
+import Netflix from 'pages/Clients/Netflix/Netflix';
 
 function App() {
   return (
@@ -42,8 +46,12 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/user' element={<User />} />
+          <Route path='/clients' element={<Clients />} />
           <Route path='/about' element={<About />} />
           <Route path='*' element='Page not found' />
+          <Route path='/clients/amazon' element={<Amazon />} />
+          <Route path='/clients/ebay' element={<Ebay />} />
+          <Route path='/clients/netflix' element={<Netflix />} />
         </Routes>
       </Layout>
     </BrowserRouter>
