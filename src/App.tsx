@@ -24,6 +24,7 @@ import Layout from 'components/Layout/Layout';
 import Amazon from 'pages/Clients/Amazon/Amazon';
 import Ebay from 'pages/Clients/Ebay/Ebay';
 import Netflix from 'pages/Clients/Netflix/Netflix';
+import Lessons13 from 'lessons/Lessons13/Lessons13';
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
       {/* <Homeworks09 /> */}
       {/* <Homeworks11 /> */}
       {/* <Consultation03 /> */}
-      <Layout>
+      {/* <Layout>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/user' element={<User />} />
@@ -53,7 +54,8 @@ function App() {
           <Route path='/clients/ebay' element={<Ebay />} />
           <Route path='/clients/netflix' element={<Netflix />} />
         </Routes>
-      </Layout>
+      </Layout> */}
+      <Lessons13 />
     </BrowserRouter>
   );
 }
