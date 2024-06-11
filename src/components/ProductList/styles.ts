@@ -34,3 +34,10 @@ export const AddResult = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
 `
+
+export const DivLine = styled.div`
+  width: 70%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+`

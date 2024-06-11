@@ -3,9 +3,9 @@ import { Consultation04Component } from './styles'
 
 function Consultation04() {
   return (
-  <Consultation04Component>
-    <ProductList />
-  </Consultation04Component>
+    <Consultation04Component>
+      <ProductList />
+    </Consultation04Component>
   )
 }
 
