@@ -25,6 +25,7 @@ import Amazon from 'pages/Clients/Amazon/Amazon';
 import Ebay from 'pages/Clients/Ebay/Ebay';
 import Netflix from 'pages/Clients/Netflix/Netflix';
 import Lessons13 from 'lessons/Lessons13/Lessons13';
+import Weather from 'pages/Weather/Wether';
 
 function App() {
   return (
@@ -55,7 +56,8 @@ function App() {
           <Route path='/clients/netflix' element={<Netflix />} />
         </Routes>
       </Layout> */}
-      <Lessons13 />
+      {/* <Lessons13 /> */}
+      <Weather />
     </BrowserRouter>
   );
 }
