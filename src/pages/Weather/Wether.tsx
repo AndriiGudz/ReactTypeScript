@@ -12,6 +12,9 @@ import {
   CityName,
   ContentBox,
   IconBox,
+  ErrooBox,
+  TitleError,
+  ErrorMessage
 } from './styled'
 import bgFote from 'assets/weather.jpg'
 
@@ -37,7 +40,7 @@ function Weather() {
 
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}qw`
       )
       if (!response.ok) {
         throw new Error('Не удалось получить данные о погоде')
@@ -85,7 +88,7 @@ function Weather() {
         </SearchBox>
         {loading && <div>Загрузка.....</div>}
 
-        {error && <div style={{ color: 'red' }}>{error}</div>}
+        {error && <ErrooBox><TitleError>API Error</TitleError><ErrorMessage>{error}</ErrorMessage></ErrooBox>}
 
         {weatherData && (
           <WeatherInfoBox>

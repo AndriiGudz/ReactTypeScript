@@ -106,3 +106,30 @@ export const IconBox = styled.img`
   height: 74px;
   padding-left: 20%;
 `
+export const ErrooBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 710px;
+  height: 130px;
+  gap: 6px;
+  background: linear-gradient(
+    133.66deg,
+    rgba(47, 72, 111, 0.62) 5.78%,
+    rgba(11, 27, 52, 0.62) 96.58%
+  );
+  border-radius: 20px;
+  margin-top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+`
+
+export const TitleError = styled.h3`
+  font-size: 57px;
+  color: #f35e5e;
+`
+
+export const ErrorMessage = styled.span`
+  color: #fff;
+  font-size: 18px;
+`

@@ -1,7 +1,7 @@
-import {LoaderComponent} from './styles'
+import { LoaderComponent } from './styles'
 
 function Loader() {
-    return <LoaderComponent></LoaderComponent>
+  return 
 }
 
 export default Loader
