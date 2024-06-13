@@ -1,7 +1,7 @@
 import { LoaderComponent } from './styles'
 
 function Loader() {
-  return 
+  return <LoaderComponent isLoading={true}></LoaderComponent>
 }
 
 export default Loader

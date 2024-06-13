@@ -17,6 +17,7 @@ import {
   ErrorMessage
 } from './styled'
 import bgFote from 'assets/weather.jpg'
+import Loader from 'components/Loader/Loader'
 
 const apiKey = '9b010adeeda6ca00ec5e5e8f19a27c5d'
 
@@ -40,10 +41,12 @@ function Weather() {
 
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}qw`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}op&appid=${apiKey}`
       )
       if (!response.ok) {
-        throw new Error('Не удалось получить данные о погоде')
+        console.log(response);
+        
+        throw new Error(`Не удалось получить данные о погоде. Код ошибки: ${response.status}. Текс ошибки: ${response.statusText}`)
       }
       const result = await response.json()
       const tempCelsius = result.main.temp - 273.15
@@ -67,6 +70,8 @@ function Weather() {
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       getWeather()
+      // console.log('getWeather');
+      
     }
   }
 
@@ -86,7 +91,7 @@ function Weather() {
           />
           <BtnSearch onClick={getWeather}>Получить погоду</BtnSearch>
         </SearchBox>
-        {loading && <div>Загрузка.....</div>}
+        {loading && <Loader />}
 
         {error && <ErrooBox><TitleError>API Error</TitleError><ErrorMessage>{error}</ErrorMessage></ErrooBox>}
 
